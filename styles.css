@@ -2,8 +2,6 @@ body {
   background-color: coral;
 }
 .header {
-  padding: 60px;
-  margin-top: 50px;
   text-align: center;
   background: #1abc9c;
   color: white;
@@ -39,10 +37,15 @@ body {
   align-items: center;
 }
 
+.banner-image {
+  width: 700px;
+  height: 300px;
+}
+
 .form {
   background-color: burlywood;
   width: 600px;
-  height: 500px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,4 +67,21 @@ body {
 
 .button {
   justify-content: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .name,
+  .address,
+  .location {
+    flex-direction: column;
+  }
+
+  .form {
+    width: 80%;
+    height: 30%;
+  }
+
+  .card {
+    flex-direction: column;
+  }
 }
